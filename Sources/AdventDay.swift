@@ -2,6 +2,7 @@
 @_exported import Collections
 import Foundation
 
+@available(iOS 13.0.0, *)
 protocol AdventDay {
   /// The day of the Advent of Code challenge.
   ///
@@ -19,6 +20,7 @@ protocol AdventDay {
   func part2() async throws -> Any
 }
 
+@available(iOS 13.0.0, *)
 extension AdventDay {
   // Find the challenge day from the type name.
   static var day: Int {

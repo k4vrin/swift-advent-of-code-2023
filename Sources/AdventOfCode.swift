@@ -1,10 +1,12 @@
 import ArgumentParser
 
 // Add each new day implementation to this array:
+@available(iOS 13.0.0, *)
 let allChallenges: [any AdventDay] = [
-  Day00()
+  Day00(), Day01()
 ]
 
+@available(iOS 16.0, *)
 @main
 struct AdventOfCode: AsyncParsableCommand {
   @Argument(help: "The day of the challenge. For December 1st, use '1'.")
